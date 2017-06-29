@@ -5,11 +5,23 @@ title: Resume
 
 <div class="wrapper">
     <section>
-        <h1> Resume</h1>
+    <h1> {{ page.title }} </h1>
+    <hr>
+    <section>
+        <h2 class="resume-section">Technical Skills</h2>
+        <hr>
+
+		{% include technical-skills.html %}
+	</section>
+    <section>
+        <h2 class="resume-section">Professional Experience</h2>
         <hr>
 
 		{% include experience.html %}
-
+	</section>
+	<section>
+        <h2 class="resume-section">Education</h2>
+        <hr>
 		{% include education.html %}
 
     </section>
